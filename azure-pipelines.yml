@@ -10,6 +10,10 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
+  - task: UseDotNet@2
+    inputs:
+      version: '5.0.x'
+      
   - script: dotnet build -c Release
     displayName: 'Build'
 
