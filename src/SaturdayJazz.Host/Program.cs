@@ -1,12 +1,13 @@
 ﻿using System;
+using SaturdayJazz.Domain;
 
 namespace SaturdayJazz.Host
 {
-    class Program
+    static class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            HelloPrinter.Print();
         }
     }
 }
